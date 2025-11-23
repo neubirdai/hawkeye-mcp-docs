@@ -19,26 +19,57 @@
   --md-default-bg-color--lightest: #194576;
 }
 
+/* Fix header/navigation contrast */
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+}
+
+.md-header__title,
+.md-header .md-tabs__link,
+.md-tabs__link {
+  color: white !important;
+  opacity: 0.9;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1 !important;
+  color: white !important;
+}
+
 /* Custom button styling */
 .md-button {
   background-color: var(--md-primary-fg-color);
   border-color: var(--md-primary-fg-color);
-  color: white;
+  color: white !important;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
 }
 
 .md-button:hover {
   background-color: var(--md-primary-fg-color--dark);
   border-color: var(--md-primary-fg-color--dark);
+  color: white !important;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(29, 185, 165, 0.3);
 }
 
 .md-button--primary {
   background-color: var(--md-accent-fg-color);
   border-color: var(--md-accent-fg-color);
+  color: white !important;
 }
 
 .md-button--primary:hover {
   background-color: #E55A4A;
   border-color: #E55A4A;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(255, 107, 91, 0.3);
 }
 
 /* Custom admonition for tips */
