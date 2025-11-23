@@ -127,21 +127,31 @@
 }
 
 .feature-card {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 0.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-color: var(--md-primary-fg-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .feature-card h3 {
   color: var(--md-primary-fg-color);
   margin-top: 0;
+}
+
+.feature-card p {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
 }
 
 /* Workflow diagram */
