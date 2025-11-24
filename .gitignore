@@ -1,0 +1,22 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+*.egg-info/
+
+# MkDocs
+site/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local documentation files
+DOCUMENTATION_SUMMARY.md
+QUICK_REFERENCE.md

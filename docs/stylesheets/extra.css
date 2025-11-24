@@ -1,0 +1,182 @@
+/* NeuBird Custom Colors */
+:root {
+  --md-primary-fg-color: #1DB9A5;
+  --md-primary-fg-color--light: #2CD4BE;
+  --md-primary-fg-color--dark: #169B8A;
+  --md-accent-fg-color: #FF6B5B;
+  --md-accent-fg-color--transparent: rgba(255, 107, 91, 0.1);
+}
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1DB9A5;
+  --md-primary-fg-color--light: #2CD4BE;
+  --md-primary-fg-color--dark: #169B8A;
+  --md-accent-fg-color: #FF6B5B;
+  --md-default-bg-color: #0A2540;
+  --md-default-bg-color--light: #0F2F52;
+  --md-default-bg-color--lighter: #143A64;
+  --md-default-bg-color--lightest: #194576;
+}
+
+/* Fix header/navigation contrast */
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+}
+
+.md-header__title,
+.md-header .md-tabs__link,
+.md-tabs__link {
+  color: white !important;
+  opacity: 0.9;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1 !important;
+  color: white !important;
+}
+
+/* Custom button styling */
+.md-button {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: white !important;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.md-button:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
+  color: white !important;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(29, 185, 165, 0.3);
+}
+
+.md-button--primary {
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: white !important;
+}
+
+.md-button--primary:hover {
+  background-color: #E55A4A;
+  border-color: #E55A4A;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(255, 107, 91, 0.3);
+}
+
+/* Custom admonition for tips */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: var(--md-accent-fg-color--transparent);
+  border-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Code block improvements */
+.md-typeset code {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+/* Navigation active state */
+.md-nav__link--active {
+  color: var(--md-primary-fg-color);
+}
+
+/* Hero section on homepage */
+.hero {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 2rem;
+}
+
+/* Feature grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--md-primary-fg-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.feature-card h3 {
+  color: var(--md-primary-fg-color);
+  margin-top: 0;
+}
+
+.feature-card p {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
+}
+
+/* Workflow diagram */
+.workflow {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--md-code-bg-color);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+/* Tool badge */
+.tool-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+/* Parameter table improvements */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
