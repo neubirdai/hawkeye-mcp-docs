@@ -248,6 +248,12 @@ Lists investigation sessions with powerful filtering.
 Show me uninvestigated alerts from the last 24 hours
 ```
 
+**Getting Links:** After listing investigations, you can request direct links:
+```
+Link for #2
+Link for sessionID abc-123-def-456
+```
+
 [Full Documentation →](tools/list-sessions.md)
 
 ---

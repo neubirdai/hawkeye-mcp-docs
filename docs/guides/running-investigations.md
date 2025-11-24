@@ -40,6 +40,26 @@ Find uninvestigated database alerts
 Show me alerts from api-service in the last hour
 ```
 
+### Getting Links to Investigations
+
+After listing investigations, you can request a direct link to view them in the Hawkeye web interface:
+
+**By list number:**
+```
+Link for #2
+```
+
+**By session ID:**
+```
+Link for sessionID abc-123-def-456
+```
+
+This provides a URL to open the investigation directly in your browser, useful for:
+- Sharing investigations with team members
+- Viewing investigations in the full web interface
+- Bookmarking specific investigations
+- Including in incident reports or documentation
+
 ### Understanding Alert Information
 
 Each alert shows:

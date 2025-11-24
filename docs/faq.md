@@ -82,6 +82,21 @@ The **instruction testing workflow** - you can test investigation instructions o
 
 Yes! Use `hawkeye_list_sessions` to find past incidents, then `hawkeye_continue_investigation` to ask follow-up questions.
 
+### Can I get a link to share an investigation?
+
+Yes! After listing investigations, you can request a direct link to view them in the Hawkeye web interface:
+
+```
+Link for #2
+Link for sessionID abc-123-def-456
+```
+
+This is useful for:
+- Sharing investigations with team members
+- Adding to incident tickets
+- Viewing in the full web interface
+- Bookmarking important investigations
+
 ## Connections
 
 ### Which cloud providers are supported?

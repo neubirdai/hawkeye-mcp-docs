@@ -178,7 +178,17 @@ Business Impact:
 Time Saved: 45 minutes
 ```
 
-### 3. Ask Follow-up Questions
+### 3. Get Investigation Link
+
+Ask Claude:
+
+```
+Link for #1
+```
+
+This provides a direct URL to view the investigation in the Hawkeye web interface, making it easy to share with team members or bookmark for later reference.
+
+### 4. Ask Follow-up Questions
 
 Ask Claude:
 
@@ -210,7 +220,7 @@ fixing the root cause will eliminate these
 incidents entirely.
 ```
 
-### 4. Get Actionable Insights
+### 5. Get Actionable Insights
 
 The RCA includes ready-to-execute bash scripts:
 

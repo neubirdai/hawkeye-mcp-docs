@@ -18,13 +18,22 @@ Show me uninvestigated alerts from the last 12 hours
 Show me only P1 alerts from the last 12 hours
 ```
 
-### Step 3: Investigate Critical
+### Step 3: Get Links for Sharing
+
+```
+Link for #1
+Link for #2
+```
+
+Share these links with your team or add to incident tickets.
+
+### Step 4: Investigate Critical
 
 ```
 Investigate all P1 alerts
 ```
 
-### Step 4: Review Results
+### Step 5: Review Results
 
 ```
 For each investigation, show me:
@@ -33,7 +42,7 @@ For each investigation, show me:
 - Business impact
 ```
 
-### Step 5: Execute Fixes
+### Step 6: Execute Fixes
 
 Copy bash scripts and code snippets from RCAs and execute corrective actions.
 
@@ -243,7 +252,9 @@ Show me:
 ### 6: Document
 
 ```
+Get link for investigation: Link for sessionID abc-123
 Copy RCA to incident ticket
+Add investigation link to ticket
 Include time saved metric
 Close incident
 ```
