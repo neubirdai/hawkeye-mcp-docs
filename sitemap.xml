@@ -61,10 +61,6 @@
          <lastmod>2025-11-24</lastmod>
     </url>
     <url>
-         <loc>https://neubirdai.github.io/hawkeye-mcp-docs/guides/investigating-alerts/</loc>
-         <lastmod>2025-11-24</lastmod>
-    </url>
-    <url>
          <loc>https://neubirdai.github.io/hawkeye-mcp-docs/guides/managing-connections/</loc>
          <lastmod>2025-11-24</lastmod>
     </url>
@@ -77,7 +73,11 @@
          <lastmod>2025-11-24</lastmod>
     </url>
     <url>
-         <loc>https://neubirdai.github.io/hawkeye-mcp-docs/guides/testing-instructions/</loc>
+         <loc>https://neubirdai.github.io/hawkeye-mcp-docs/guides/running-investigations/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://neubirdai.github.io/hawkeye-mcp-docs/guides/using-instructions/</loc>
          <lastmod>2025-11-24</lastmod>
     </url>
     <url>
