@@ -4,23 +4,12 @@ Let your AI agents interact with Hawkeye's autonomous incident investigation pla
 
 ## Prerequisites
 
-Node.js >= 20.0.0 is required. Download from [nodejs.org](https://nodejs.org/) or use your package manager:
+Before you begin, you'll need:
 
-```bash
-# macOS
-brew install node@20
-
-# Linux (Ubuntu/Debian)
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-Check your Node.js version:
-
-```bash
-node --version
-# Should output v20.0.0 or higher
-```
+- ✅ **Active Hawkeye account** - [Contact NeuBird](https://neubird.ai/contact-us/) to get started
+- ✅ **Node.js 20+** - [Download Node.js](https://nodejs.org/)
+- ✅ **Connected data source** - At least one cloud provider ([AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP) or monitoring tool (Datadog, PagerDuty, etc.)
+- ✅ **MCP-compatible client** - Claude Code, Cursor, or GitHub Copilot
 
 ## MCP Configuration
 
@@ -58,7 +47,7 @@ Configure your MCP client to use `hawkeye-mcp-server`:
 
 === "Claude Code"
 
-    Add this configuration within `.mcp.json` file of your project directory:
+    Add this configuration in `.mcp.json` file of your project directory:
 
     ```json
     {
@@ -80,47 +69,25 @@ Configure your MCP client to use `hawkeye-mcp-server`:
 
 === "GitHub Copilot"
 
-    Add this configuration to `.vscode/mcp.json`:
+    Add the `.vscode/mcp.json` file to your workspace:
 
     ```json
     {
-      "mcpServers": {
+      "servers": {
         "hawkeye": {
           "command": "npx",
           "args": ["-y", "hawkeye-mcp-server"],
           "env": {
-            "HAWKEYE_EMAIL": "your-email@company.com",
-            "HAWKEYE_PASSWORD": "your-password",
-            "HAWKEYE_BASE_URL": "https://app.neubird.ai/api"
+            "HAWKEYE_EMAIL": "${HAWKEYE_EMAIL}",
+            "HAWKEYE_PASSWORD": "${HAWKEYE_PASSWORD}",
+            "HAWKEYE_BASE_URL": "${HAWKEYE_BASE_URL}"
           }
         }
       }
     }
     ```
 
-    [View GitHub Copilot setup documentation →](github-copilot.md)
-
-=== "OpenAI"
-
-    Add this configuration to your OpenAI MCP settings:
-
-    ```json
-    {
-      "mcpServers": {
-        "hawkeye": {
-          "command": "npx",
-          "args": ["-y", "hawkeye-mcp-server"],
-          "env": {
-            "HAWKEYE_EMAIL": "your-email@company.com",
-            "HAWKEYE_PASSWORD": "your-password",
-            "HAWKEYE_BASE_URL": "https://app.neubird.ai/api"
-          }
-        }
-      }
-    }
-    ```
-
-    [View OpenAI setup documentation →](installation.md)
+    [View GitHub Copilot MCP documentation →](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
 ## What You Can Do
 
