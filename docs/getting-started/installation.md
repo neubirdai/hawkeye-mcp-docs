@@ -1,142 +1,95 @@
 # Installation
 
-Get started with Hawkeye MCP Server in minutes.
+Let your AI agents interact with Hawkeye's autonomous incident investigation platform using the Model Context Protocol.
 
 ## Prerequisites
 
-- **Node.js** >= 20.0.0
-- **npm** >= 9.0.0
-- **Hawkeye Account** with API access
+Before you begin, you'll need:
 
-Check your Node.js version:
+- ✅ **Active Hawkeye account** - [Contact NeuBird](https://neubird.ai/contact-us/) to get started
+- ✅ **Node.js 20+** - [Download Node.js](https://nodejs.org/)
+- ✅ **Connected data source** - At least one cloud provider ([AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP) or monitoring tool (Datadog, PagerDuty, etc.)
+- ✅ **MCP-compatible client** - Claude Code, Cursor, or GitHub Copilot
+
+## MCP Configuration
+
+Set your Hawkeye environment variables:
 
 ```bash
-node --version
-# Should output v20.0.0 or higher
+export HAWKEYE_EMAIL="your-email@company.com"
+export HAWKEYE_PASSWORD="your-password"
+export HAWKEYE_BASE_URL="https://<env>.app.neubird.ai/api"
 ```
 
-!!! tip "Need to install Node.js?"
-    Download from [nodejs.org](https://nodejs.org/) or use your package manager:
+Configure your MCP client to use `hawkeye-mcp-server`:
 
-    ```bash
-    # macOS
-    brew install node@20
+=== "Cursor"
 
-    # Linux (Ubuntu/Debian)
-    curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-    sudo apt-get install -y nodejs
+    Create `.cursor/mcp.json` in your project with the following content:
+
+    ```json
+    {
+      "mcpServers": {
+        "hawkeye": {
+          "command": "npx",
+          "args": ["-y", "hawkeye-mcp-server"],
+          "env": {
+            "HAWKEYE_EMAIL": "${env:HAWKEYE_EMAIL}",
+            "HAWKEYE_PASSWORD": "${env:HAWKEYE_PASSWORD}",
+            "HAWKEYE_BASE_URL": "${env:HAWKEYE_BASE_URL}"
+          }
+        }
+      }
+    }
     ```
 
-## Install Hawkeye MCP Server
+    [View Cursor MCP documentation →](https://cursor.com/docs/context/mcp)
 
-=== "npx (Recommended)"
+=== "Claude Code"
 
-    No installation required - run directly:
+    Add this configuration in `.mcp.json` file of your project directory:
 
-    ```bash
-    npx hawkeye-mcp-server
+    ```json
+    {
+      "mcpServers": {
+        "hawkeye": {
+          "command": "npx",
+          "args": ["-y", "hawkeye-mcp-server"],
+          "env": {
+            "HAWKEYE_EMAIL": "${HAWKEYE_EMAIL}",
+            "HAWKEYE_PASSWORD": "${HAWKEYE_PASSWORD}",
+            "HAWKEYE_BASE_URL": "${HAWKEYE_BASE_URL}"
+          }
+        }
+      }
+    }
     ```
 
-    **Pros:**
+    [View Claude Code MCP documentation →](https://code.claude.com/docs/en/mcp)
 
-    - ✅ No installation step
-    - ✅ Always latest version
-    - ✅ Perfect for getting started
+=== "GitHub Copilot"
 
-=== "Global Install"
+    Add the `.vscode/mcp.json` file to your workspace:
 
-    Install once, use anywhere:
-
-    ```bash
-    npm install -g hawkeye-mcp-server
+    ```json
+    {
+      "servers": {
+        "hawkeye": {
+          "command": "npx",
+          "args": ["-y", "hawkeye-mcp-server"],
+          "env": {
+            "HAWKEYE_EMAIL": "${HAWKEYE_EMAIL}",
+            "HAWKEYE_PASSWORD": "${HAWKEYE_PASSWORD}",
+            "HAWKEYE_BASE_URL": "${HAWKEYE_BASE_URL}"
+          }
+        }
+      }
+    }
     ```
 
-    Verify:
-
-    ```bash
-    hawkeye-mcp --version
-    ```
-
-    **Pros:**
-
-    - ✅ Faster startup
-    - ✅ Available system-wide
-    - ✅ Easy updates: `npm update -g hawkeye-mcp-server`
-
-## Configuration
-
-### Required Environment Variables
-
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `HAWKEYE_EMAIL` | Your Hawkeye account email | `user@company.com` |
-| `HAWKEYE_PASSWORD` | Your Hawkeye password | `your-password` |
-| `HAWKEYE_BASE_URL` | Hawkeye API endpoint | `https://app.neubird.ai/api` |
-
-!!! warning "Keep credentials secure"
-    Never expose your credentials in configuration files that might be committed to version control. Use secure methods to store and access your credentials.
-
-## Verify Installation
-
-After configuring your AI client, verify the installation works:
-
-**Test command:**
-```
-List my Hawkeye projects
-```
-
-**Expected response:**
-- If you see a list of projects (even if empty), installation is successful!
-- If you see an error, check the [Troubleshooting Guide](../troubleshooting.md)
+    [View GitHub Copilot MCP documentation →](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
 ## Next Steps
 
-### Configure Your AI Client
-
-Choose your AI client to complete the setup:
-
-<div class="grid cards" markdown>
-
--   :material-application: __Claude Desktop__
-
-    ---
-
-    Native Anthropic desktop app (recommended for beginners)
-
-    [:octicons-arrow-right-24: Claude Desktop Setup](claude-desktop.md)
-
--   :material-console: __Claude Code__
-
-    ---
-
-    Terminal-based AI assistant from Anthropic
-
-    [:octicons-arrow-right-24: Claude Code Setup](claude-code.md)
-
--   :material-cursor-default-click: __Cursor__
-
-    ---
-
-    AI-powered code editor with MCP support
-
-    [:octicons-arrow-right-24: Cursor Setup](cursor.md)
-
--   :material-microsoft-visual-studio-code: __GitHub Copilot__
-
-    ---
-
-    VS Code integration with GitHub Copilot
-
-    [:octicons-arrow-right-24: GitHub Copilot Setup](github-copilot.md)
-
-</div>
-
-### Start Using Hawkeye
-
-Once your client is configured:
-
-**[📚 Complete Onboarding Guide →](../guides/onboarding.md)**
-Complete step-by-step guide to add connections, create projects, and run your first investigation
-
-**[⚡ Quick Start →](quickstart.md)**
-Jump straight to basic usage if you're familiar with MCP
+Once your client is configured, head over to [Quick Start](./quickstart.md) to verify 
+connectivity with Hawkeye and run sample commands.

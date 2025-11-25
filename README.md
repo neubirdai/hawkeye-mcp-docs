@@ -149,7 +149,7 @@ Contributions are welcome! Please:
 
 ## License
 
-Copyright © 2024 NeuBird AI
+Copyright © 2025 NeuBird AI
 
 ## Support
 
