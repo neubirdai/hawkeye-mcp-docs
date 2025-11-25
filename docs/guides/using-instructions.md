@@ -122,6 +122,7 @@ Format the report in markdown with clear headers. Keep technical jargon to a min
 ```
 
 **What this instruction does:**
+
 - Ensures consistent report structure across all investigations
 - Makes RCAs readable for both technical and non-technical stakeholders
 - Provides clear action items with timelines
