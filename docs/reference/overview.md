@@ -8,7 +8,7 @@ Complete reference for all 40 Hawkeye MCP tools.
 Create and manage Hawkeye projects that organize connections and instructions.
 
 ### [Connections](#connections) (10 tools)
-Connect to AWS, Azure, GCP, Datadog, PagerDuty, and other platforms.
+Connect to [AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP, Datadog, PagerDuty, and other platforms.
 
 ### [Investigations](#investigations) (11 tools)
 Investigate alerts, monitor real-time progress, get RCA results, and ask follow-up questions.
@@ -138,7 +138,7 @@ Show me all my connections
 
 ### hawkeye_create_aws_connection
 
-Creates an AWS connection.
+Creates an [AWS](https://neubird.ai/agentic-ai-for-aws/) connection.
 
 **Parameters:**
 - `name` (string, required): Connection name
@@ -202,7 +202,7 @@ Adds connections to a project.
 
 **Example:**
 ```
-Add my AWS and Datadog connections to Production
+Add my [AWS](https://neubird.ai/agentic-ai-for-aws/) and Datadog connections to Production
 ```
 
 [Full Documentation →](tools/add-connection-to-project.md)

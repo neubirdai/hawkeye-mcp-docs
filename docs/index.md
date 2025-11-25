@@ -21,7 +21,7 @@ Before you begin, you'll need:
 
 - ✅ **Active Hawkeye account** - [Contact NeuBird](https://neubird.ai/contact-us/) to get started
 - ✅ **Node.js 20+** - [Download Node.js](https://nodejs.org/)
-- ✅ **Connected data source** - At least one cloud provider (AWS, Azure, GCP) or monitoring tool (Datadog, PagerDuty, etc.)
+- ✅ **Connected data source** - At least one cloud provider ([AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP) or monitoring tool (Datadog, PagerDuty, etc.)
 - ✅ **MCP-compatible client** - Claude Desktop, Claude Code, Cursor, or GitHub Copilot
 
 ## What You Can Do
@@ -29,7 +29,7 @@ Before you begin, you'll need:
 With Hawkeye MCP, you can:
 
 - 🔍 **Investigate alerts automatically** - AI-powered root cause analysis for your incidents
-- 🔗 **Connect multi-cloud environments** - AWS, Azure, GCP, Datadog, PagerDuty, and more
+- 🔗 **Connect multi-cloud environments** - [AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP, Datadog, PagerDuty, and more
 - 🎯 **Test instructions safely** - Validate and test investigation instructions before deployment
 - 📊 **Track performance** - Monitor MTTR, time saved, and investigation quality
 - 🤖 **Autonomous remediation** - Get actionable corrective actions with bash scripts
@@ -177,7 +177,7 @@ Restart your AI client and you're ready to go!
 ### Complete Onboarding
 
 ```
-1. Add connections (AWS, Datadog, etc.)
+1. Add connections ([AWS](https://neubird.ai/agentic-ai-for-aws/), Datadog, etc.)
    hawkeye_create_aws_connection(...)
    hawkeye_wait_for_connection_sync(...)
 

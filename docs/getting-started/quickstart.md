@@ -268,7 +268,7 @@ This uses `hawkeye_get_incident_report` for organization-wide analytics.
 Now that you've completed your first investigation, choose your next step:
 
 **[Managing Connections →](../guides/managing-connections.md)**
-Connect AWS, Azure, Datadog, and more
+Connect [AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, Datadog, and more
 
 **[Using Instructions →](../guides/using-instructions.md)**
 Guide Hawkeye's investigation behavior

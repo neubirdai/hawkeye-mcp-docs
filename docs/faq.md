@@ -14,7 +14,7 @@ Hawkeye MCP Server is a Model Context Protocol server that connects AI assistant
 - Get actionable corrective actions your coding agent can execute
 - Track MTTR and time saved metrics
 - Test investigation instructions before deployment
-- Connect multi-cloud environments (AWS, Azure, GCP)
+- Connect multi-cloud environments ([AWS](https://neubird.ai/agentic-ai-for-aws/), Azure, GCP)
 - Integrate with monitoring tools (Datadog, PagerDuty, etc.)
 
 ### How much does it cost?
@@ -101,7 +101,7 @@ This is useful for:
 
 ### Which cloud providers are supported?
 
-- AWS (CloudWatch, EC2, RDS, Lambda, ECS)
+- [AWS](https://neubird.ai/agentic-ai-for-aws/) (CloudWatch, EC2, RDS, Lambda, ECS)
 - Azure (Azure Monitor, VMs, Functions)
 - GCP (Cloud Logging, Monitoring, Compute)
 
@@ -126,7 +126,7 @@ No, start with your primary cloud provider and main monitoring tool. Add others 
 
 ### What permissions do connections need?
 
-- **AWS:** ReadOnlyAccess IAM policy
+- **[AWS](https://neubird.ai/agentic-ai-for-aws/):** ReadOnlyAccess IAM policy
 - **Azure:** Reader role
 - **GCP:** Viewer role
 - **Datadog:** Read-only API and app keys
