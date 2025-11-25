@@ -91,42 +91,41 @@ Group incidents when:
 
 ### RCA Instructions
 
-**Purpose:** Guide the investigation process with specific steps
+**Purpose:** Control the format and content requirements of Root Cause Analysis reports
+
+**Note:** RCA instructions define what sections to include in RCA reports, language preferences, and how findings should be presented. They standardize report structure across all investigations.
 
 **When to use:**
-- You have domain expertise for certain incident types
-- Previous investigations missed important checks
-- You want consistent investigation methodology
-- Specific tools or queries should always be checked
+- You need standardized RCA report formatting for your organization
+- Reports must be readable for both technical and non-technical stakeholders
+- You want consistent documentation structure across all incidents
+- Compliance or organizational standards require specific report sections
+- You need RCAs formatted for specific audiences (leadership, regulators, etc.)
 
-**Example - API Latency Issues:**
+**Example - Standardized RCA Report Format:**
+
+**Prompt:**
 ```
-For API latency or timeout incidents:
+Create an RCA instruction for my Test Production project:
 
-1. Check database query performance in slow query logs
-2. Review connection pool metrics (active, idle, waiting)
-3. Examine API endpoint traces in Datadog APM
-4. Check for downstream service latency (payment, notification services)
-5. Verify cache hit rates in Redis
-6. Look for recent deployments or configuration changes
-7. Analyze request rate patterns and identify traffic spikes
-8. Provide specific optimization recommendations with commands
-```
+"All RCA reports must include these sections:
+1. Executive Summary - A 2-3 sentence overview suitable for leadership
+2. Impact Assessment - Include affected services, user impact percentage, and estimated revenue impact if applicable
+3. Timeline - Use UTC timestamps and include detection time, first response, and resolution time
+4. Root Cause - Explain in both technical and non-technical terms
+5. Corrective Actions - Separate into 'Immediate' (within 24h) and 'Long-term' (within 30 days)
+6. Prevention Measures - Include specific monitoring thresholds to add
 
-**Example - Memory Issues:**
-```
-For memory-related incidents (OOM, memory leaks):
-
-1. Review memory usage timeline over past 24 hours
-2. Check for memory growth patterns (gradual vs sudden)
-3. Examine heap dump analysis if available
-4. Look for connection or resource leaks
-5. Check cache sizes and growth rates
-6. Review recent code changes affecting memory
-7. Provide specific fixes with memory limit recommendations
+Format the report in markdown with clear headers. Keep technical jargon to a minimum in the Executive Summary section."
 ```
 
-**Impact:** Investigations follow your prescribed methodology and check all relevant areas.
+**What this instruction does:**
+- Ensures consistent report structure across all investigations
+- Makes RCAs readable for both technical and non-technical stakeholders
+- Provides clear action items with timelines
+- Includes forward-looking prevention measures
+
+**Impact:** All RCA reports follow your organization's documentation standards and include the sections required by your stakeholders.
 
 ## Why Test Instructions?
 
