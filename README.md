@@ -1,4 +1,4 @@
-# Hawkeye MCP Documentation
+s# Hawkeye MCP Documentation
 
 Documentation site for the Hawkeye MCP Server - AI-powered incident investigation through Model Context Protocol.
 
@@ -155,4 +155,4 @@ Copyright © 2024 NeuBird AI
 
 For questions or issues:
 - Create an issue on GitHub
-- Contact the NeuBird team at https://neubird.ai
+- Contact the NeuBird team at https://neubird.ai/contact-us
