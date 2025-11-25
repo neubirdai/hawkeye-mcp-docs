@@ -17,6 +17,7 @@ Hawkeye supports four types of instructions, each serving a specific purpose:
 **Purpose:** Reduce noise by filtering out low-value alerts
 
 **When to use:**
+
 - You're getting too many minor alerts
 - Certain alert sources are unreliable
 - You want to focus on critical incidents only
@@ -37,6 +38,7 @@ Only investigate incidents with:
 **Purpose:** Provide architectural context and infrastructure details
 
 **When to use:**
+
 - Hawkeye needs to understand your architecture
 - Investigations lack context about your systems
 - You want better root cause analysis
@@ -74,6 +76,7 @@ Our infrastructure:
 **Purpose:** Group related alerts together to avoid duplicate investigations
 
 **When to use:**
+
 - Multiple alerts fire for the same underlying issue
 - Cascading failures create alert storms
 - You want to investigate grouped incidents once
@@ -91,11 +94,10 @@ Group incidents when:
 
 ### RCA Instructions
 
-**Purpose:** Control the format and content requirements of Root Cause Analysis reports
-
-**Note:** RCA instructions define what sections to include in RCA reports, language preferences, and how findings should be presented. They standardize report structure across all investigations.
+**Purpose:** RCA instructions define what sections to include in RCA reports, language preferences, and how findings should be presented. They standardize report structure across all investigations.
 
 **When to use:**
+
 - You need standardized RCA report formatting for your organization
 - Reports must be readable for both technical and non-technical stakeholders
 - You want consistent documentation structure across all incidents
