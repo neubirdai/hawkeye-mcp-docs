@@ -1,77 +1,12 @@
 # Quick Start
 
-Get up and running with Hawkeye MCP in 5 minutes.
+After you have configured your MCP client in the [Installation](./installation.md) section, 
+continue with the following steps to run your first investigation. This guide assumes 
+usage of Claude Code.  
 
-## Prerequisites
+## Test Hawkeye Connection
 
-Before starting, ensure you have:
-
-- [x] Node.js 20+ installed
-- [x] Hawkeye account credentials
-- [x] MCP client (Claude Desktop, Claude Code, etc.)
-
-!!! tip "New to Hawkeye?"
-    If you don't have an account, [book a demo](https://neubird.ai) to get started.
-
-## 5-Minute Setup
-
-### Step 1: Install Hawkeye MCP
-
-=== "npx (Fastest)"
-
-    No installation needed:
-
-    ```bash
-    npx hawkeye-mcp-server
-    ```
-
-=== "Global Install"
-
-    Install once:
-
-    ```bash
-    npm install -g hawkeye-mcp-server
-    ```
-
-### Step 2: Configure Credentials
-
-Create `.env` file:
-
-```bash
-HAWKEYE_EMAIL=your-email@company.com
-HAWKEYE_PASSWORD=your-password
-HAWKEYE_BASE_URL=https://app.neubird.ai/api
-```
-
-### Step 3: Connect to Claude Desktop
-
-Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "hawkeye": {
-      "command": "npx",
-      "args": ["-y", "hawkeye-mcp-server"],
-      "env": {
-        "HAWKEYE_EMAIL": "your-email@company.com",
-        "HAWKEYE_PASSWORD": "your-password",
-        "HAWKEYE_BASE_URL": "https://app.neubird.ai/api"
-      }
-    }
-  }
-}
-```
-
-### Step 4: Restart Claude Desktop
-
-1. Quit Claude Desktop completely
-2. Relaunch Claude Desktop
-3. Look for Hawkeye tools in the tools panel (🔨 icon)
-
-### Step 5: Test It Out
-
-Try these commands in Claude Desktop:
+Try asking these questions in your MCP Client:
 
 ```
 List my Hawkeye projects
@@ -80,6 +15,8 @@ List my Hawkeye projects
 ```
 Show me uninvestigated incidents
 ```
+
+You should get a list of your Hawkeye projects and uninvestigated incidents. 
 
 ## Your First Investigation
 

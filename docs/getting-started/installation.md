@@ -89,18 +89,7 @@ Configure your MCP client to use `hawkeye-mcp-server`:
 
     [View GitHub Copilot MCP documentation →](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
-## What You Can Do
-
-- **Investigate alerts automatically** - AI-powered root cause analysis for your incidents
-- **Connect multi-cloud environments** - AWS, Azure, GCP, Datadog, PagerDuty, and more
-- **Test instructions safely** - Validate investigation instructions before deployment
-- **Track performance** - Monitor MTTR, time saved, and investigation quality
-
 ## Next Steps
 
-Once your client is configured:
-
-- [Complete Onboarding Guide](../guides/onboarding.md) - Step-by-step guide to add connections, create projects, and run your first investigation
-- [API Reference](../reference/overview.md) - Full list of available tools and capabilities
-- [Hawkeye Platform Documentation](https://help.neubird.ai/introduction/overview/) - Learn more about the Hawkeye platform
-- [FAQ](../faq.md) - Common questions and answers
+Once your client is configured, head over to [Quick Start](./quickstart.md) to verify 
+connectivity with Hawkeye and run sample commands.
