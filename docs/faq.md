@@ -270,7 +270,7 @@ Compares estimated manual investigation time vs actual Hawkeye investigation tim
 3. Check permissions (ReadOnly access)
 4. Check network connectivity
 
-See [Troubleshooting](troubleshooting.md) for more solutions.
+<!-- See [Troubleshooting](troubleshooting.md) for more solutions. -->
 
 ## Best Practices
 
@@ -366,8 +366,8 @@ Hawkeye MCP respects Hawkeye API rate limits. For high-volume usage, contact Neu
 
 1. **Documentation:** [Full docs](https://neubirdai.github.io/hawkeye-mcp-docs)
 2. **Inline help:** Ask Claude "How do I..." using the guidance system
-3. **Troubleshooting:** [Common issues](troubleshooting.md)
-4. **Support:** Email support@neubird.ai
+<!-- 3. **Troubleshooting:** [Common issues](troubleshooting.md) -->
+3. **Support:** Email support@neubird.ai
 
 ### How do I report a bug?
 
@@ -390,5 +390,5 @@ Contact support@neubird.ai or your NeuBird account representative.
 - [Installation Guide](getting-started/installation.md)
 - [Quick Start](getting-started/quickstart.md)
 - [Complete Onboarding](guides/onboarding.md)
-- [Troubleshooting](troubleshooting.md)
+<!-- - [Troubleshooting](troubleshooting.md) -->
 - [Guides](guides/onboarding.md)

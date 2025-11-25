@@ -527,5 +527,4 @@ If issues persist:
 
 4. **Documentation:**
    - [Installation Guide](getting-started/installation.md)
-   - [Authentication Guide](getting-started/authentication.md)
    - [FAQ](faq.md)

@@ -92,7 +92,7 @@ nav:
       - AWS Integration: examples/aws-integration.md
       - Testing Instructions: examples/testing-instructions.md
       - Daily Workflows: examples/daily-workflows.md
-  - Troubleshooting: troubleshooting.md
+#  - Troubleshooting: troubleshooting.md
   - FAQ: faq.md
 
 markdown_extensions:

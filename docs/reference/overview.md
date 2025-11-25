@@ -43,8 +43,6 @@ Lists all available projects.
 List my Hawkeye projects
 ```
 
-[Full Documentation →](tools/list-projects.md)
-
 ---
 
 ### hawkeye_create_project
@@ -61,8 +59,6 @@ Creates a new Hawkeye project.
 Create a project called "Production"
 ```
 
-[Full Documentation →](tools/create-project.md)
-
 ---
 
 ### hawkeye_get_project_details
@@ -76,8 +72,6 @@ Gets detailed information about a project.
 ```
 Show me details for my Production project
 ```
-
-[Full Documentation →](tools/get-project-details.md)
 
 ---
 
@@ -95,8 +89,6 @@ Updates project properties.
 Rename project to "Production Environment"
 ```
 
-[Full Documentation →](tools/update-project.md)
-
 ---
 
 ### hawkeye_delete_project
@@ -111,8 +103,6 @@ Deletes a project (requires confirmation).
 ```
 Delete project abc-123-def-456
 ```
-
-[Full Documentation →](tools/delete-project.md)
 
 ---
 
@@ -132,8 +122,6 @@ Lists all available connections.
 Show me all my connections
 ```
 
-[Full Documentation →](tools/list-connections.md)
-
 ---
 
 ### hawkeye_create_aws_connection
@@ -150,8 +138,6 @@ Creates an [AWS](https://neubird.ai/agentic-ai-for-aws/) connection.
 ```
 Create AWS connection with role arn:aws:iam::123:role/Hawkeye
 ```
-
-[Full Documentation →](tools/create-aws-connection.md)
 
 ---
 
@@ -170,8 +156,6 @@ Creates a Datadog connection.
 Create Datadog connection for Production
 ```
 
-[Full Documentation →](tools/create-datadog-connection.md)
-
 ---
 
 ### hawkeye_wait_for_connection_sync
@@ -188,8 +172,6 @@ Waits for a connection to reach SYNCED state.
 Wait for my AWS connection to sync
 ```
 
-[Full Documentation →](tools/wait-for-connection-sync.md)
-
 ---
 
 ### hawkeye_add_connection_to_project
@@ -205,8 +187,6 @@ Adds connections to a project.
 Add my [AWS](https://neubird.ai/agentic-ai-for-aws/) and Datadog connections to Production
 ```
 
-[Full Documentation →](tools/add-connection-to-project.md)
-
 ---
 
 ### hawkeye_list_project_connections
@@ -220,8 +200,6 @@ Lists connections for a project.
 ```
 Show me connections for Production project
 ```
-
-[Full Documentation →](tools/list-project-connections.md)
 
 ---
 
@@ -254,8 +232,6 @@ Link for #2
 Link for sessionID abc-123-def-456
 ```
 
-[Full Documentation →](tools/list-sessions.md)
-
 ---
 
 ### hawkeye_investigate_alert
@@ -275,8 +251,6 @@ Investigate alert /aws/alerts/cpu-spike-123
 
 **Real-Time Progress:** After starting an investigation, use `hawkeye_get_investigation_status` to monitor real-time progress. The investigation streams updates as it runs, showing you each step and data source consultation.
 
-[Full Documentation →](tools/investigate-alert.md)
-
 ---
 
 ### hawkeye_continue_investigation
@@ -293,8 +267,6 @@ Why did this happen? Has it happened before?
 ```
 
 **Important:** Use `session_uuid` from investigated sessions, not `alert_id`.
-
-[Full Documentation →](tools/continue-investigation.md)
 
 ---
 
@@ -354,8 +326,6 @@ Show me the RCA for this investigation
 
 **Recommended:** Use this FIRST after listing sessions.
 
-[Full Documentation →](tools/get-rca.md)
-
 ---
 
 ### hawkeye_get_chain_of_thought
@@ -371,8 +341,6 @@ Gets investigation reasoning steps.
 Show me the chain of thought for this investigation
 ```
 
-[Full Documentation →](tools/get-chain-of-thought.md)
-
 ---
 
 ### hawkeye_get_investigation_queries
@@ -386,8 +354,6 @@ Gets detailed query execution logs.
 ```
 What queries were run during this investigation?
 ```
-
-[Full Documentation →](tools/get-investigation-queries.md)
 
 ---
 
@@ -403,8 +369,6 @@ Gets data sources consulted during investigation.
 What data sources were checked?
 ```
 
-[Full Documentation →](tools/get-investigation-sources.md)
-
 ---
 
 ### hawkeye_get_follow_up_suggestions
@@ -418,8 +382,6 @@ Gets suggested follow-up questions.
 ```
 What follow-up questions should I ask?
 ```
-
-[Full Documentation →](tools/get-follow-up-suggestions.md)
 
 ---
 
@@ -440,8 +402,6 @@ Gets quality score for an RCA investigation.
 Show me the quality score for this investigation
 ```
 
-[Full Documentation →](tools/get-rca-score.md)
-
 ---
 
 ## Instructions
@@ -461,8 +421,6 @@ Lists instructions for a project.
 ```
 Show me all active RCA instructions
 ```
-
-[Full Documentation →](tools/list-project-instructions.md)
 
 ---
 
@@ -487,8 +445,6 @@ Creates a new project instruction.
 Create a SYSTEM instruction about our architecture
 ```
 
-[Full Documentation →](tools/create-project-instruction.md)
-
 ---
 
 ### hawkeye_validate_instruction
@@ -507,8 +463,6 @@ Validates an instruction before applying.
 Validate this RCA instruction: "For database issues, check slow queries first"
 ```
 
-[Full Documentation →](tools/validate-instruction.md)
-
 ---
 
 ### hawkeye_apply_session_instruction
@@ -526,8 +480,6 @@ Applies an instruction to a specific session for testing.
 Apply this instruction to session abc-123 for testing
 ```
 
-[Full Documentation →](tools/apply-session-instruction.md)
-
 ---
 
 ### hawkeye_rerun_session
@@ -541,8 +493,6 @@ Re-runs an investigation with applied instructions.
 ```
 Rerun this session with the new instruction
 ```
-
-[Full Documentation →](tools/rerun-session.md)
 
 ---
 
@@ -562,8 +512,6 @@ Gets session metadata.
 Inspect session metadata for abc-123
 ```
 
-[Full Documentation →](tools/inspect-session.md)
-
 ---
 
 ### hawkeye_get_session_report
@@ -579,8 +527,6 @@ Gets summary reports for sessions.
 Show me reports for these 3 sessions
 ```
 
-[Full Documentation →](tools/get-session-report.md)
-
 ---
 
 ### hawkeye_get_session_summary
@@ -594,8 +540,6 @@ Gets detailed analysis and scoring.
 ```
 Show me the session summary
 ```
-
-[Full Documentation →](tools/get-session-summary.md)
 
 ---
 
@@ -615,8 +559,6 @@ Gets comprehensive incident statistics across ALL investigations.
 ```
 Show me our incident statistics
 ```
-
-[Full Documentation →](tools/get-incident-report.md)
 
 ---
 
@@ -638,8 +580,6 @@ Aggregates ALL available resources across project connections.
 Show me all available log sources
 ```
 
-[Full Documentation →](tools/discover-project-resources.md)
-
 ---
 
 ### hawkeye_list_connection_resource_types
@@ -654,8 +594,6 @@ Gets resource types for a connection type + telemetry type combination.
 ```
 Show me AWS log resource types
 ```
-
-[Full Documentation →](tools/list-connection-resource-types.md)
 
 ---
 

@@ -323,6 +323,4 @@ aws iam get-role-policy \
 
 ## See Also
 
-- [Azure Integration](azure-integration.md)
-- [Datadog Integration](datadog-integration.md)
 - [Managing Connections](../guides/managing-connections.md)

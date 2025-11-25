@@ -287,8 +287,6 @@ Track:
 2. Check `HAWKEYE_BASE_URL` ends with `/api`
 3. Test login at Hawkeye web UI
 
-See [Authentication](authentication.md#troubleshooting) for more help.
-
 ### Investigation Taking Too Long
 
 **Problem:** Investigation running for several minutes
@@ -325,7 +323,7 @@ Show uninvestigated alerts from the last 30 days
 
 - **Documentation:** Full guides at [guides section](../guides/onboarding.md)
 - **Examples:** Real-world examples in [examples section](../examples/complete-setup.md)
-- **Troubleshooting:** Common issues at [troubleshooting](../troubleshooting.md)
+<!-- - **Troubleshooting:** Common issues at [troubleshooting](../troubleshooting.md) -->
 - **Support:** Contact [NeuBird](https://neubird.ai) for help
 
 ## Next Steps
