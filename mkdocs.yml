@@ -87,6 +87,7 @@ nav:
   - Guides:
       - Complete Onboarding: guides/onboarding.md
       - Running Investigations: guides/running-investigations.md
+      - Prompt Engineering: guides/prompt-engineering.md
       - Using Instructions: guides/using-instructions.md
       - Managing Projects: guides/managing-projects.md
       - Managing Connections: guides/managing-connections.md

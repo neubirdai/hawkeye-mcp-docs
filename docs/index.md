@@ -15,6 +15,17 @@
 
 Hawkeye MCP Server is a **Model Context Protocol** server that enables AI assistants like Claude to interact with [NeuBird's Hawkeye platform](https://neubird.ai) for automated incident investigation and root cause analysis.
 
+## Prerequisites
+
+Before you begin, you'll need:
+
+- ✅ **Active Hawkeye account** - [Contact NeuBird](https://neubird.ai/contact-us/) to get started
+- ✅ **Node.js 20+** - [Download Node.js](https://nodejs.org/)
+- ✅ **Connected data source** - At least one cloud provider (AWS, Azure, GCP) or monitoring tool (Datadog, PagerDuty, etc.)
+- ✅ **MCP-compatible client** - Claude Desktop, Claude Code, Cursor, or GitHub Copilot
+
+## What You Can Do
+
 With Hawkeye MCP, you can:
 
 - 🔍 **Investigate alerts automatically** - AI-powered root cause analysis for your incidents
@@ -29,8 +40,8 @@ With Hawkeye MCP, you can:
     <p>Install via npm and connect to Hawkeye in minutes. Works with Claude Desktop, Claude Code, Cursor, GitHub Copilot, and any MCP-compatible client.</p>
   </a>
 
-  <a href="guides/investigating-alerts/" class="feature-card">
-    <h3>🔌 39 Tools</h3>
+  <a href="reference/overview/" class="feature-card">
+    <h3>🔌 43 Tools</h3>
     <p>Comprehensive API covering projects, connections, investigations, instructions, and analytics.</p>
   </a>
 
@@ -67,10 +78,10 @@ HAWKEYE_BASE_URL=https://app.neubird.ai/api
 
 Configure your preferred AI client:
 
-**Claude Desktop** - Native Anthropic desktop app
-**Claude Code** - Terminal-based AI assistant
-**Cursor** - AI-powered code editor
-**GitHub Copilot** - VS Code integration
+- **[Claude Desktop](getting-started/claude-desktop.md)** - Native Anthropic desktop app
+- **[Claude Code](getting-started/claude-code.md)** - Terminal-based AI assistant
+- **[Cursor](getting-started/cursor.md)** - AI-powered code editor
+- **[GitHub Copilot](getting-started/github-copilot.md)** - VS Code integration
 
 Example configuration for Claude Desktop (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
@@ -113,6 +124,7 @@ Restart your AI client and you're ready to go!
 ```
 
 [Investigation Guide →](guides/running-investigations.md){ .md-button }
+[Prompt Engineering Tips →](guides/prompt-engineering.md){ .md-button }
 
 ### Create Manual Investigation
 
@@ -138,7 +150,8 @@ Restart your AI client and you're ready to go!
 
 **Tip:** Be specific! Include service names, timeframes, and symptoms for best results.
 
-[Investigation Guide →](guides/running-investigations.md){ .md-button }
+[Manual Investigation Guide →](guides/running-investigations.md#manual-investigations){ .md-button }
+[Prompt Engineering Tips →](guides/prompt-engineering.md){ .md-button }
 
 ### Test an Instruction
 
@@ -225,6 +238,7 @@ Every investigation provides:
 - 📚 [Full Documentation](getting-started/installation.md)
 - 🎓 [Guides & Tutorials](guides/onboarding.md)
 - 💡 [Examples](examples/complete-setup.md)
+- 📖 [Hawkeye Platform Documentation](https://help.neubird.ai/introduction/overview/)
 - ❓ [FAQ](faq.md)
 - 🐛 [Troubleshooting](troubleshooting.md)
 
@@ -232,7 +246,7 @@ Every investigation provides:
 
 - **Documentation:** [https://neubirdai.github.io/hawkeye-mcp-docs](https://neubirdai.github.io/hawkeye-mcp-docs)
 - **NeuBird Website:** [https://neubird.ai](https://neubird.ai)
-- **Book a Demo:** [https://neubird.ai](https://neubird.ai)
+- **Book a Demo:** [https://neubird.ai/contact-us/](https://neubird.ai/contact-us/)
 - **GitHub:** [https://github.com/neubirdai/hawkeye-mcp-docs](https://github.com/neubirdai/hawkeye-mcp-docs)
 
 ---

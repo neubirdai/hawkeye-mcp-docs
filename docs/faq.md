@@ -59,10 +59,10 @@ In your MCP client configuration file:
 
 ### How many tools are available?
 
-39 tools across 7 categories:
+43 tools across 7 categories:
 - Projects (5)
 - Connections (10)
-- Investigations (10)
+- Investigations (11)
 - Instructions (7)
 - Analytics (4)
 - Discovery (2)

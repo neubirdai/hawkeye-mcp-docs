@@ -230,7 +230,7 @@ After restarting Claude Desktop, verify Hawkeye tools are available:
 1. Look for the 🔨 tools icon in Claude Desktop
 2. Click to open tools panel
 3. You should see "hawkeye" listed
-4. Should show "39 tools available"
+4. Should show "43 tools available"
 
 #### Test with Commands
 

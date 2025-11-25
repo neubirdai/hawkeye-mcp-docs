@@ -724,8 +724,9 @@ How do I create an AWS connection?
 - **Analytics:** 4 tools
 - **Discovery:** 2 tools
 - **Help:** 1 tool
+- **Additional:** 3 tools (set_default_project, create_manual_investigation, get_investigation_status enhancements)
 
-**Total: 40 tools**
+**Total: 43 tools**
 
 ## See Also
 
