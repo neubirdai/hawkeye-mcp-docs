@@ -32,7 +32,7 @@ Configure your MCP client to use `hawkeye-mcp-server`:
       "mcpServers": {
         "hawkeye": {
           "command": "npx",
-          "args": ["-y", "hawkeye-mcp-server"],
+          "args": ["-y", "hawkeye-mcp-server@latest"],
           "env": {
             "HAWKEYE_EMAIL": "${env:HAWKEYE_EMAIL}",
             "HAWKEYE_PASSWORD": "${env:HAWKEYE_PASSWORD}",
@@ -54,7 +54,7 @@ Configure your MCP client to use `hawkeye-mcp-server`:
       "mcpServers": {
         "hawkeye": {
           "command": "npx",
-          "args": ["-y", "hawkeye-mcp-server"],
+          "args": ["-y", "hawkeye-mcp-server@latest"],
           "env": {
             "HAWKEYE_EMAIL": "${HAWKEYE_EMAIL}",
             "HAWKEYE_PASSWORD": "${HAWKEYE_PASSWORD}",
@@ -76,7 +76,7 @@ Configure your MCP client to use `hawkeye-mcp-server`:
       "servers": {
         "hawkeye": {
           "command": "npx",
-          "args": ["-y", "hawkeye-mcp-server"],
+          "args": ["-y", "hawkeye-mcp-server@latest"],
           "env": {
             "HAWKEYE_EMAIL": "${HAWKEYE_EMAIL}",
             "HAWKEYE_PASSWORD": "${HAWKEYE_PASSWORD}",
