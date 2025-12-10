@@ -89,6 +89,24 @@ Configure your MCP client to use `hawkeye-mcp-server`:
 
     [View GitHub Copilot MCP documentation →](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
+=== "OpenAI Codex"
+
+    Add following contents to `~/.codex/config.toml`
+
+    ```toml
+    [mcp_servers.hawkeye]
+    command = "npx"
+    args = ["-y", "hawkeye-mcp-server@latest"]
+
+    # NOTE: No variable expansion supported — values must be literal
+    [mcp_servers.hawkeye.env]
+    HAWKEYE_EMAIL = "your-email@example.com"
+    HAWKEYE_PASSWORD = "your-password"
+    HAWKEYE_BASE_URL = "https://<env>.app.neubird.ai/api"
+    ```
+
+    [View Codex MCP documentation →](https://developers.openai.com/codex/mcp/)
+
 ## Next Steps
 
 Once your client is configured, head over to [Quick Start](./quickstart.md) to verify 
